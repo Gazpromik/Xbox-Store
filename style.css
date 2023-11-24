@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.wrapper {
+}
+.container {
+    max-width: 1140px;
+    margin: 0px auto;
+}
+.header {
+    background: #D8D8D8;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.header img {
+    width: 40px;
+    height: 40px;
+}
+.menu {
+    display: flex;
+    gap: 60px;
+}
+.menu a {
+    display: block;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+}
+.menu a:hover:after  {
+    width: 100%;
+}
+.menu a::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 0%;
+    background-color: #000000;
+    position: absolute;
+    transition: 0.3s;
+}
+.main {
+    background: #FFF;
+}
+.main .container {
+    min-height: 700px;
+    position: relative;
+}
+.main img {
+    display: block;
+    height: 700px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.main h1 {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.92px;
+    padding-top: 103px;
+    margin-bottom: 55px;
+}
+.main p {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    margin-bottom: 126px;
+}
+.main p span {
+    color: #107C10;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.72px;
+}
+.main button {
+    max-width: 400px;
+    width: 100%;
+    height: 69px;
+    border-radius: 5px;
+    background: #9CE81B;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    transition: 0.3s;
+}
+.main button:hover {
+    background: #90d419;
+}
+.about {
+    background: #00FF38;
+}
+.about h2 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 47px;
+    margin-bottom: 81px;
+}
+.columns {
+    display: flex;
+    justify-content: center;
+    padding-bottom:  72px;
+    gap: 43px;
+}
+.column {
+    width: 350px;
+    width: 100%;
+    text-align: center;
+}
+.column img {
+    width: 144px;
+    height: 144px;
+    margin-bottom: 23px;
+}
+.column h3 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 52px;
+}
+.column p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: normal;
+}
+.products {
+    background: #E9E9E9;
+}
+.products .container {
+    padding: 47px 0px 68.5px;
+}
+.products h2 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 85px;
+}
+.cards {
+    display: flex;
+    gap: 140px;
+}
+.card {
+    text-align: center;
+}
+.card img {
+    width: 500px;
+    height: 281.726px;
+    margin-bottom: 47.27px;
+}
+.card h3 {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 14px;
+}
+.card p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 34px;
+}
+.card .button {
+    height: 56.5px;
+    color: #000;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    position: relative;
+}
+.card .button span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.card .button path {
+    fill: #9CE81B;
+}
+.card .button:hover path {
+    fill: #90d419;
+}
+.footer {
+    background: #000;
+}
+.footer .container {
+    display: flex;
+    padding: 56px 0px 57px;
+    margin-top: 56px;
+    margin-bottom: 57px;
+}
+.footer .container p {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.6px;
+    margin-left: auto;
+    margin-right: auto;
+}
