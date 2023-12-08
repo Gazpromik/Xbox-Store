@@ -3,9 +3,11 @@
 .wrapper {
 }
 .container {
-    max-width: 1140px;
+    max-width: 1200px;
+    padding: 0px 30px;
     margin: 0px auto;
 }
+/* Шапка сайта */
 .header {
     background: #D8D8D8;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.15);
@@ -45,6 +47,12 @@
     position: absolute;
     transition: 0.3s;
 }
+@media (max-width: 650px) {
+    .menu {
+        display: none;
+    }
+}
+/* Главная страница */
 .main {
     background: #FFF;
 }
@@ -54,10 +62,12 @@
 }
 .main img {
     display: block;
-    height: 700px;
+    max-width: 560px;
+    width: 100%;
     position: absolute;
     top: 0;
     right: 0;
+    z-index: 1;
 }
 .main h1 {
     color: #000;
@@ -77,6 +87,8 @@
     line-height: normal;
     letter-spacing: 0.72px;
     margin-bottom: 126px;
+    position: relative;
+    z-index: 2;
 }
 .main p span {
     color: #107C10;
@@ -103,6 +115,36 @@
 .main button:hover {
     background: #90d419;
 }
+@media (max-width: 1000px) {
+    .main img {
+        position: static;   
+    }
+    .main .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .main p {
+        text-align: center;
+    }
+}
+@media (max-width: 750px) {
+    .main h1 {
+        text-align: center;
+        padding-top: 63px;
+        font-size: 40px;
+    }
+    .main p {
+        margin-bottom: 76px;
+        font-size: 30px;
+    }
+}
+@media (max-width: 390px) {
+    .main button {
+        font-size: 24px;
+    }
+}
+/* Приемущества */
 .about {
     background: #00FF38;
 }
@@ -149,6 +191,12 @@
     font-weight: 400;
     line-height: normal;
 }
+@media (max-width: 1000px) {
+    .columns {
+        flex-wrap: wrap;
+    }
+}
+/* Продукты */
 .products {
     background: #E9E9E9;
 }
@@ -167,13 +215,14 @@
 .cards {
     display: flex;
     gap: 140px;
+    justify-content: center;
 }
 .card {
     text-align: center;
 }
 .card img {
-    width: 500px;
-    height: 281.726px;
+    max-width: 500px;
+    width: 100%;
     margin-bottom: 47.27px;
 }
 .card h3 {
@@ -216,6 +265,20 @@
 .card .button:hover path {
     fill: #90d419;
 }
+@media (max-width: 1200px) {
+    .cards {
+        gap: 0px;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 1000px) {
+    .cards {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 100px;
+    }
+}
+/* Подвал */
 .footer {
     background: #000;
 }
