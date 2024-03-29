@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html {
+    scroll-behavior: smooth;
+    }
 .wrapper {
 }
 .container {
@@ -222,7 +225,7 @@
 }
 .card img {
     max-width: 500px;
-    width: 100%;
+    width: 100%;   
     margin-bottom: 47.27px;
 }
 .card h3 {
@@ -294,3 +297,512 @@
     letter-spacing: 0.6px;
     text-align: center;
 }
+/* Контакты */
+
+/* Главная страница */
+.main2 {
+    background-color: #FFF;
+}
+.container2 {
+    display: flex;
+    max-width: 1140px;
+    width: 100%;
+    margin: 0px auto;
+}
+.contact {
+    width: 100%;
+    min-height: 1px;
+}
+.conimg {
+    width: 100%;
+    min-height: 1px;
+}
+.main2 .container2 {
+    min-height: 440px;
+}
+.container2 img {
+    max-width: 453px;
+    width: 100%;
+    height: 248px;
+    position: relative;
+    top: 69px;
+    left: 82px;
+    background-color: #107C10;
+}
+.main2 .container2 h1 {
+    color: #000;
+    font-family: Inter;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: normal;
+    position: relative;
+    padding-top: 104px;
+}
+.main2 .container2 p {
+    color: #000;
+    font-family: Inter;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    padding-top: 35px;
+}
+@media (max-width: 1140px) {
+    .main2 .container2 {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+    
+    .main2 .container2 img {
+        position: static;
+        margin-bottom: 157px;
+        margin-top: 50px;
+    }
+}
+
+/* Все контакты */
+
+.help {
+    background: #fff;
+}
+.help .container2 {
+    min-height: 807px;
+}
+
+/* Помощь */
+
+.problem {
+    position: absolute;
+    background: #00FF38;
+    max-width: 548px;
+    height: 309px;
+    border-radius: 20px;
+}
+.problem h4 {
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding-top: 18px;
+}
+.problem ul {
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 35px;
+    margin-left: 66px;
+    margin-bottom: 17px;
+}
+.problem .l2 {
+    margin-top: 18px;
+    margin-bottom: 17px;
+}
+.problem p {
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px, 45px, 18px, 0px;
+    margin-left: 13px;
+}
+.problem {
+    width: 100%;
+    min-height: 1px;
+}
+
+/* Брак */
+
+.defect {
+    position: absolute;
+    background: #00FF38;
+    max-width: 548px;
+    width: 100%;
+    height: 309px;
+    border-radius: 20px;
+    margin-left: 592px;
+}
+.defect h4 {
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding-top: 18px;
+}
+.defect ul {
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 86px;
+    margin-top: 35px;
+    margin-bottom: 28px;
+}
+.defect .l1 {
+    margin-bottom: 18px;
+}
+.defect p {
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px, 22px, 24px, 0px;
+    margin-left: 21px;
+}
+.defect {
+    width: 100%;
+    min-height: 1px;
+}
+.prodef {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Помощь сделать сервис лучше */
+
+.better {
+    position: absolute;
+    background: #00FF38;
+    max-width: 548px;
+    width: 100%;
+    height: 309px;
+    border-radius: 20px;
+    margin-top: 344px;
+}
+.better h4 {
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding-top: 18px;
+}
+.better ul {
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 18px;
+    margin-left: 66px;
+    margin-bottom: 17px;
+}
+.better .l1 {
+    margin-bottom: 17px;
+}
+.better p {
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px, 13px, 10px, 0px;
+    margin-left: 13px;
+}
+
+/* Другое */
+
+.other {
+    position: absolute;
+    background: #00FF38;
+    max-width: 548px;
+    width: 100%;
+    height: 309px;
+    border-radius: 20px;
+    margin-top: 344px;
+    margin-left: 592px;
+}
+.other h4 {
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    padding-top: 18px;
+}
+.other ul {
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 66px;
+    margin-top: 52px;
+    margin-bottom: 53px;
+}
+.other p {
+    color: #000;
+    font-family: Inter;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0px, 10px, 19px, 0px;
+    margin-left: 13px;
+}
+.better {
+    width: 100%;
+    min-height: 1px;
+}
+.other {
+    width: 100%;
+    min-height: 1px;
+}
+.betoth {
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 1140px) {
+    .help .container2  {
+        position: relative;
+        margin-bottom: 157px;
+        margin-top: 50px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .problem {
+        position: relative;
+        margin: 0px;
+        margin-bottom: 35px;
+    }
+    .defect {
+        position: relative;
+        margin: 0px;
+        margin-bottom: 35px;
+    }
+    .better {
+        position: relative;
+        margin: 0px;
+        margin-bottom: 35px;
+    }
+    .other {
+        position: relative;
+        margin: 0px;
+    }
+}
+@media (max-width: 1050px) {
+    .help p {
+        font-size: 20px;
+    }
+    .help ul {
+        font-size: 20px;
+    }
+    .help h4 {
+        font-size: 20px;
+    }
+}
+@media (max-width: 750px) {
+    .help p {
+        font-size: 15px;
+    }
+    .help ul {
+        font-size: 15px;
+    }
+    .help h4 {
+        font-size: 15px;
+    }
+}
+
+/* Консоли */
+
+.consoles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.newer {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: normal;
+    padding: 50px 516px 0px 516px;
+    text-align: center;
+}
+.new {
+    display: grid;
+    grid-template-columns: 18vw 18vw 18vw;
+    grid-template-rows: 500px;
+    justify-content: center;
+    padding: 50px 15vw 0px 15vw;
+}
+.card1 {
+    grid-column: 1;
+    border-radius: 25px;
+    background: #D9D9D9;
+}
+.card2 {
+    grid-column: 3;
+    border-radius: 25px;
+    background: #D9D9D9;
+}
+.card1 img {
+    width: 19vw;
+    height: 22vh;
+    margin-top: 20px;
+}
+.card1 h3 {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+.card1 .price {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: normal;
+    margin: 11px 45px;
+}
+.card1 .discr {
+    color: #000;
+    font-family: Inter;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 11px 22px 33px 16px;
+}
+.card2 img {
+    width: 19vw;
+    height: 22vh;
+    margin-top: 20px;
+}
+.card2 h3 {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+.card2 .price {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: normal;
+    margin: 11px 43px 11px 45px;
+}
+.card2 .discr {
+    color: #000;
+    font-family: Inter;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 15px 20px 47px 19px;
+}
+.older {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: normal;
+    padding: 50px 516px;
+    text-align: center;
+}
+.old {
+    display: grid;
+    grid-template-columns: 18vw 18vw 18vw;
+    grid-template-rows: 500px;
+    justify-content: center;
+    padding: 0px 15vw 50px 15vw;
+}
+.card3 {
+    border-radius: 25px;
+    background: #D9D9D9;
+}
+.card4 {
+    grid-column: 3;
+    border-radius: 25px;
+    background: #D9D9D9;
+}
+.card3 img {
+    width: 19vw;
+    height: 22vh;
+    margin-top: 20px;
+}
+.card3 h3 {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+.card3 .price {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: normal;
+    margin: 11px 47px 11px 44px;
+}
+.card3 .discr {
+    color: #000;
+    font-family: Inter;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 11px 45px 33px 18px;
+}
+.card4 img {
+    width: 12.5vw;
+    height: 22vh;
+    margin: 20px 52px 0px 52px;
+}
+.card4 h3 {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.8em;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+.card4 .price {
+    color: #000;
+    font-family: Inter;
+    font-size: 1.8em;
+    font-weight: 400;
+    line-height: normal;
+    margin: 11px 45px 11px 50px;
+}
+.card4 .discr {
+    color: #000;
+    font-family: Inter;
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 11px 37px 69px 21px;
+}
+
+

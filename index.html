@@ -6,16 +6,36 @@
     <title>Xbox Store</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script type="text/javascript">
+ 
+        $(document).ready(function(){
+            $("#menu").on("click","a", function (event) {
+                //отменяем стандартную обработку нажатия по ссылке
+                event.preventDefault();
+        
+                //забираем идентификатор бока с атрибута href
+                var id  = $(this).attr('href'),
+        
+                //узнаем высоту от начала страницы до блока на который ссылается якорь
+                    top = $(id).offset().top;
+                
+                //анимируем переход на расстояние - top за 1500 мс
+                $('body,html').animate({scrollTop: top}, 1500 );
+            });
+        });
+        
+        </script>
 </head>
 <body>
     <div class="wrapper">
         <div class="header">
             <div class="container">
                 <img src="images/logo.png" alt="no picture">
-                <div class="menu">
+                <div id="menu" class="menu">
                     <a href="">Главное</a>
                     <a href="">О нас</a>
-                    <a href="">Консоли</a>
+                    <a href="#console">Консоли</a>
                     <a href="">Контакты</a>
                 </div>
             </div>
@@ -51,6 +71,7 @@
             </div>
         </div>
         <div class="products">
+            <section id="console">
             <div class="container">
                 <h2>Выберите свою консоль Xbox</h2>
                 <div class="cards">
@@ -77,6 +98,7 @@
                             </div>
                     </div>
                 </div>
+            </section>
             </div>
         </div>
         <div class="footer">
