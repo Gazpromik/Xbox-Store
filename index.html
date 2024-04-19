@@ -6,26 +6,6 @@
     <title>Xbox Store</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
-    <script type="text/javascript">
- 
-        $(document).ready(function(){
-            $("#menu").on("click","a", function (event) {
-                //отменяем стандартную обработку нажатия по ссылке
-                event.preventDefault();
-        
-                //забираем идентификатор бока с атрибута href
-                var id  = $(this).attr('href'),
-        
-                //узнаем высоту от начала страницы до блока на который ссылается якорь
-                    top = $(id).offset().top;
-                
-                //анимируем переход на расстояние - top за 1500 мс
-                $('body,html').animate({scrollTop: top}, 1500 );
-            });
-        });
-        
-        </script>
 </head>
 <body>
     <div class="wrapper">
@@ -33,8 +13,8 @@
             <div class="container">
                 <img src="images/logo.png" alt="no picture">
                 <div id="menu" class="menu">
-                    <a href="">Главное</a>
-                    <a href="">О нас</a>
+                    <a href="index.html">Главное</a>
+                    <a href="about.html">О Xbox</a>
                     <a href="consol.html">Консоли</a>
                     <a href="contact.html">Контакты</a>
                 </div>
@@ -53,7 +33,7 @@
                 <h2>Почему вы должны выбрать именно нас?</h2>
                 <div class="columns">
                     <div class="column">
-                        <img src="images/Game Pass.jpg" alt="">
+                        <img src="images/GamePass.jpg" alt="">
                         <h3>Подписка Game Pass в подарок!</h3>
                         <p>При покупки одной из нашей консолей вы получаете Game Pass на 1 месяц с более 1000 играми совершенно бесполатно!!!</p>
                     </div>
@@ -76,7 +56,7 @@
                 <h2>Выберите свою консоль Xbox</h2>
                 <div class="cards">
                     <div class="card">
-                            <img src="images/Xbox S.png" alt="">
+                            <img src="images/XboxS.png" alt="">
                             <h3>Xbox Series S</h3>
                             <p>28.385 руб.</p>
                             <div class="button">
@@ -87,7 +67,7 @@
                             </div> 
                     </div>
                     <div class="card">
-                            <img src="images/Xbox X.png" alt="">
+                            <img src="images/XboxX.png" alt="">
                             <h3>Xbox Series X</h3>
                             <p>49.999 руб.</p>
                             <div class="button">
@@ -98,13 +78,13 @@
                             </div>
                     </div>
                 </div>
+            </div>
             </section>
-            </div>
         </div>
-        <div class="footer">
-            <div class="container">
-                <p>ООО “Microsoft”</p>
-            </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <p>ООО “Microsoft”</p>
         </div>
     </div>
 </body>
